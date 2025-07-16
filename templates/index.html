@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>SEOlab Demo</title>
+    <script src="/static/js/script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to SEOlab</h1>
-    <p>This is a functional demo page.</p>
+    <h1>Generador SEOlab</h1>
+    <form id="seoForm">
+        <label>Objetivo comunicacional:</label>
+        <select id="objetivo">
+            <option value="ventas">Generar ventas</option>
+            <option value="engagement">Generar engagement</option>
+        </select><br><br>
+
+        <label>Categoría del producto:</label>
+        <select id="categoria">
+            <option value="ropa">Ropa y accesorios</option>
+            <option value="hogar">Hogar y decoración</option>
+            <option value="artesanias">Artesanías</option>
+        </select><br><br>
+
+        <label>URL del producto:</label><br>
+        <input type="text" id="urlProducto" size="60"><br><br>
+
+        <button type="submit">Optimizar SEO</button>
+    </form>
+
+    <hr>
+    <h2>Resultados</h2>
+    <div id="resultado"></div>
 </body>
 </html>
